@@ -39,3 +39,48 @@ p {
     font-family: var(--font-body);
     color: var(--color-text);
 }
+
+/* Navbar Styles */
+
+.custom-navbar {
+    background-color: #f5f8f4; /* soft, calming background */
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #dce5dd; /* subtle divider */
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+}
+.custom-navbar .navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #2f4f3e; /* deep green for branding */
+}
+.custom-navbar .navbar-brand img {
+    width: 32px;
+    height: 32px;
+}
+.custom-navbar .nav-link {
+    color: #3d5f4a;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.2s ease;
+    font-family: var(--font-heading);
+}
+.custom-navbar .nav-link:hover {
+    color: #1f3a2c; /* darker green on hover */
+}
+.custom-navbar .nav-link.active {
+    color: #1f3a2c;
+    font-weight: 600;
+}
+
+.custom-navbar span {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    display: inline-flex; /* shrink to content */
+    width: auto; /* prevent stretching */
+    max-width: max-content; /* ensures no flex expansion */
+    padding: 0; /* optional: removes extra hitbox */
+}
