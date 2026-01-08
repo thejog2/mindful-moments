@@ -1,0 +1,14 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Global Styles */
+
+:root {
+    --color-bg: #f4f7f5; /* soft off‑white */
+    --color-primary: #6baa75; /* gentle leaf green */
+    --color-secondary: #a3c9a8; /* muted sage */
+    --color-accent: #3e6b48; /* deep forest green */
+    --color-text: #2e2e2e; /* charcoal */
+    --font-heading: "Raleway", sans-serif;
+    --font-body: "Nunito", sans-serif;
+}
