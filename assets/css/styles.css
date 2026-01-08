@@ -84,3 +84,74 @@ p {
     max-width: max-content; /* ensures no flex expansion */
     padding: 0; /* optional: removes extra hitbox */
 }
+
+/* Header/Hero Section Styles */
+
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure video doesn't overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Background video */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1; /* Behind the text */
+}
+/* Content on top */
+.hero-content {
+    position: relative;
+    z-index: 2; /* In front of the video */
+    color: white;
+    padding: 0 1rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.hero-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+}
+
+.hero-section::before {
+    /* Overlay */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25); /* Soft dark overlay */
+    z-index: 1;
+}
+
+/* ----------------------------------------- MOBILE FALLBACK (IMAGE INSTEAD OF VIDEO) ----------------------------------------- */
+@media (max-width: 767px) {
+    .hero-video {
+        display: none; /* Hide video on mobile */
+    }
+    .hero-section {
+        background-image: url("../images/hero-image.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
