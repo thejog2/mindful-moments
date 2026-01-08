@@ -272,6 +272,22 @@ p {
     color: #f2f7f5; /* ensure all body text is readable */
 }
 
+.footer-social .social-link {
+    font-size: 1.5rem;
+    color: #f2f7f5; /* same accessible light text */
+    transition: color 0.3s ease;
+    margin: 0 1rem; /* increase spacing left and right */
+}
+
+.footer-social .social-link:hover {
+    color: #6c9a8b; /* your brand green */
+}
+
+.footer-social {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.5rem;
+}
+
 /* ----------------------------------------- MOBILE FALLBACK (IMAGE INSTEAD OF VIDEO) ----------------------------------------- */
 @media (max-width: 767px) {
     .hero-video {
