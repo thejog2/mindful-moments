@@ -185,6 +185,93 @@ p {
     top: -2px;
 }
 
+#whatWeDoCarousel .carousel-item img {
+    border-radius: 12px; /* adjust to taste */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
+}
+
+/* Simple Support Section */
+
+.simple-support-section {
+    background-color: #f4f7f5; /* soft calming background */
+}
+.support-item {
+    padding: 1rem;
+}
+.support-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: #6c9a8b; /* your brand green */
+}
+.support-item p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+}
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Success Stories Section */
+
+.success-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.success-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.story-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 220px;
+    object-fit: cover;
+}
+#success-stories {
+    background-color: #ffffff; /* keep this clean before the footer */
+}
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Footer Section */
+
+.footer-section {
+    background-color: #1f2a28; /* darker, high-contrast green-grey */
+    color: #f2f7f5; /* soft but accessible light text */
+}
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff; /* pure white for headings */
+}
+.footer-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #e9f5f0; /* gentle highlight */
+}
+.footer-hours .hours-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footer-hours .hours-row:last-child {
+    border-bottom: none;
+}
+.footer-section p,
+.footer-section span {
+    font-size: 0.95rem;
+    color: #f2f7f5; /* ensure all body text is readable */
+}
+
 /* ----------------------------------------- MOBILE FALLBACK (IMAGE INSTEAD OF VIDEO) ----------------------------------------- */
 @media (max-width: 767px) {
     .hero-video {
@@ -194,5 +281,14 @@ p {
         background-image: url("../images/hero-image.png");
         background-size: cover;
         background-position: center;
+    }
+}
+
+/* ----------------------------------------- Media Queries ----------------------------------------- */
+
+@media (min-width: 768px) {
+    .footer-section .row {
+        display: flex;
+        justify-content: space-around;
     }
 }
