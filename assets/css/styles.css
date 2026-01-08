@@ -156,6 +156,33 @@ p {
     border-color: #5a8578;
 }
 
+/* What We Do Section */
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.what-we-do-list {
+    list-style: none;
+    padding-left: 0;
+}
+.what-we-do-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.what-we-do-list li::before {
+    content: "•";
+    color: #6c9a8b; /* calming green */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
 /* ----------------------------------------- MOBILE FALLBACK (IMAGE INSTEAD OF VIDEO) ----------------------------------------- */
 @media (max-width: 767px) {
     .hero-video {
