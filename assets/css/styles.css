@@ -33,6 +33,7 @@ h2,
 h3 {
     font-family: var(--font-heading);
     color: var(--color-text);
+    text-transform: uppercase;
 }
 
 p {
@@ -95,6 +96,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 100vh; /* Doesn't get compressed from other content */
 }
 /* Background video */
 .hero-video {
